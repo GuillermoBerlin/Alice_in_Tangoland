@@ -6,7 +6,7 @@
 .cuadradoArriba {
   background-image:url("images/Frame\ 27.png");
   background-size: cover;
-  height: 90vh;;
+  height: 97vh;;
   background-color: darkred;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,6 @@
 
 .cuadradoAbajo {
   height: 1000px;
-  padding-top: 40px;
   background-color: #070705;
   display: flex;
   flex-direction: column;

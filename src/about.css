@@ -1,0 +1,43 @@
+.mainContainerAbout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 1px 30px;  
+}
+
+.textContainer p {
+    margin: 0px;
+    color: #AAAAAA;
+    font-weight: 200;
+}
+
+.textContainer h3 {
+    margin: 0px;
+    color: #AAAAAA;
+    font-size: 25px;
+    font-weight: 400;
+}  
+
+.imageAboutContainer {
+    
+    
+    
+}
+
+.imageAboutContainer img {
+    max-width: 500px;
+    
+ 
+}
+

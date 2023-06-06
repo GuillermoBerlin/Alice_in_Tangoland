@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Header';
-import Buttons from './Buttons';
+import ButtonsAndContent from './ButtonsAndContent';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <Header/>
       </div>
       <div className="cuadradoAbajo">
-        <Buttons/>
+        <ButtonsAndContent/>
       </div>
     </div>
   );
