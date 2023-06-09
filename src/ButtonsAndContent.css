@@ -20,3 +20,22 @@
     border: none;
 }
 
+@media (max-width: 1050px) {
+    .containerButtons {
+        margin: 45px 0px;
+    }
+}
+
+@media (max-width: 540px) {
+    .containerButtons {
+        
+        gap: 25px;
+        
+    }
+}  
+
+@media (max-width: 450px) {
+    .containerButtons {
+        margin: 20px 0px;
+    }
+}    
