@@ -3,10 +3,9 @@
 }
 
 .cuadradoArriba {
-  background-image:url("images/Frame\ 27.png");
+  background-image:url("images/Frame\ 27.jpg");
   background-size: cover;
-  height: 97vh;;
-  background-color: darkred;
+  height: 97vh;
   display: flex;
   flex-direction: column;
   align-items: center;
