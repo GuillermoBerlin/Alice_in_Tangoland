@@ -1,17 +1,26 @@
-import './App.css';
-import Header from './Header';
-import ButtonsAndContent from './ButtonsAndContent';
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import About from "./About";
+import Gallery from "./Gallery";
+import Contact from "./Contact";
+import "./App.css";
+import Header from "./Header";
+import ButtonsAndContent from "./ButtonsAndContent";
 
 function App() {
   return (
-    <div className="mainDiv">
+    <Router className="mainDiv">
       <div className="cuadradoArriba">
-        <Header/>
+        <Header />
       </div>
       <div className="cuadradoAbajo">
-        <ButtonsAndContent/>
+        <ButtonsAndContent />
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

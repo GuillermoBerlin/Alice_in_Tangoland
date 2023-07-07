@@ -1,30 +1,51 @@
-import React, { useState } from 'react';
-import About from './About';
-import Gallery from './Gallery';
-import Contact from './Contact';
-import './ButtonsAndContent.css';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./ButtonsAndContent.css";
 
-const ButtonsAndContent = () => {
-  const [componenteActivo, setComponenteActivo] = useState(About);
+function ButtonsAndContent() {
+  const [isActive, setIsActive] = useState({});
 
-  const renderizarComponente = (componente) => {
-    setComponenteActivo(componente);
+  const handleToggle = (e) => {
+    setIsActive(() => ({ [e.target.value]: !isActive[e.target.value] }));
   };
 
   return (
-    <div className='buttonsAndContent'>
-      <div className='containerButtons'>
-        <button onClick={() => renderizarComponente(About)}>About</button>
-        <button onClick={() => renderizarComponente(Gallery)}>Gallery</button>
-        <button onClick={() => renderizarComponente(Contact)}>Contact</button>
+    <div className="buttonsAndContent">
+      <div className="container">
+        <Link to="/about">
+          <button
+            value="about"
+            onClick={handleToggle}
+            className={isActive["about"] ? "activeButton" : "containerButtons"}
+          >
+            About
+          </button>
+        </Link>
+        <Link to="/gallery">
+          <button
+            value="gallery"
+            onClick={handleToggle}
+            className={
+              isActive["gallery"] ? "activeButton" : "containerButtons"
+            }
+          >
+            Gallery
+          </button>
+        </Link>
+        <Link to="/contact">
+          <button
+            value="contact"
+            onClick={handleToggle}
+            className={
+              isActive["contact"] ? "activeButton" : "containerButtons"
+            }
+          >
+            Contact
+          </button>
+        </Link>
       </div>
-
-      <div>
-        {componenteActivo} 
-      </div>  
     </div>
-
   );
-};
+}
 
 export default ButtonsAndContent;
