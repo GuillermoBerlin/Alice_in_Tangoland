@@ -8,7 +8,7 @@ function ButtonsAndContent() {
   const handleToggle = (e) => {
     setIsActive(() => ({ [e.target.value]: !isActive[e.target.value] }));
   };
-
+ 
   return (
     <div className="buttonsAndContent">
       <div className="container">
