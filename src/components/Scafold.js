@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./ButtonsAndContent.css";
+import "./Scafold.css";
 
-function ButtonsAndContent() {
+function Scafold() {
   const [isActive, setIsActive] = useState({});
 
   const handleToggle = (e) => {
     setIsActive(() => ({ [e.target.value]: !isActive[e.target.value] }));
   };
- 
+
   return (
     <div className="buttonsAndContent">
       <div className="container">
@@ -48,4 +48,4 @@ function ButtonsAndContent() {
   );
 }
 
-export default ButtonsAndContent;
+export default Scafold;

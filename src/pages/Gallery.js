@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./gallery.css";
-import images from "./Images";
+import images from "../components/Images";
 
 export default function Gallery() {
   const [imageToShow, setImageToShow] = useState("");
