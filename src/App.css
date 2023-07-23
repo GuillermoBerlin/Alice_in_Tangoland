@@ -2,8 +2,8 @@
   position: relative;
 }
 
-.cuadradoArriba {
-  background-image:url("images/Frame\ 27.jpg");
+.topContent {
+  background-image: url("images/Frame\ 27.jpg");
   background-size: cover;
   height: 97vh;
   display: flex;
@@ -15,8 +15,7 @@
   z-index: 1;
 }
 
-.cuadradoAbajo {
-  
+.bottomContent {
   background-color: #070705;
   display: flex;
   flex-direction: column;
@@ -29,11 +28,7 @@
 }
 
 @media (max-width: 520px) {
-  .cuadradoArriba {
-    
-    height: auto;;
-    
+  .topContent {
+    height: auto;
   }
-}   
-
-
+}

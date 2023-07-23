@@ -1,19 +1,19 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
-import About from "./About";
-import Gallery from "./Gallery";
-import Contact from "./Contact";
+import About from "./pages/About";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 import "./App.css";
-import Header from "./Header";
-import ButtonsAndContent from "./ButtonsAndContent";
+import Header from "./components/Header";
+import Scafold from "./components/Scafold";
 
 function App() {
   return (
     <Router className="mainDiv">
-      <div className="cuadradoArriba">
+      <div className="topContent">
         <Header />
       </div>
-      <div className="cuadradoAbajo">
-        <ButtonsAndContent />
+      <div className="bottomContent">
+        <Scafold />
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
@@ -25,5 +25,3 @@ function App() {
 }
 
 export default App;
-
-
