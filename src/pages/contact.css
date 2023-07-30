@@ -84,7 +84,19 @@ textarea{
     flex-direction: row;
     align-items: start;
     gap: 10px;
+    width:fit-content;
+    
 }
+
+.contact-element-text-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width:fit-content;
+}
+
+
 
 .icon-contact{
     color: #aaaaaa;
@@ -100,7 +112,6 @@ textarea{
     margin: 0;
     font-size: 25px;
     font-weight: normal;
-    
 }
 
 .contact-element-texts h4{
@@ -114,29 +125,36 @@ textarea{
 }
 
 @media (max-width: 750px) {
-    .contact-main-div{ 
-        
-        flex-direction: column;
-        
+    .contact-main-div{   
+        flex-direction: column; 
     }
-    .left-column{
+    .left-column, .right-column{
     width: 75vw
-    }
     
+    }
 }
 @media (max-width: 490px) {
-    .contact-main-div{ 
-        
-        
-        
-    }
-    .left-column{
-    width: 85vw
-    }
+   
     .left-column, .right-column{     
         padding: 12px; 
+        width: 85vw;
+        gap: 8px;
     }
+    
+    .right-column{
+        height: 380px; 
+    }
+    h3{
+        font-size: 30px;
+        margin-bottom: 0px; 
+    }.contact-element-texts h3{
+       
+        font-size: 20px;
+        font-weight: normal;
+    }   
 }
+
+
 
 
 
