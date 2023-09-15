@@ -25,6 +25,7 @@
   z-index: 2;
   box-shadow: 0px -10px 5px rgba(15, 15, 15, 0.774);
   padding-bottom: 70px;
+  min-height: 100vh;
 }
 
 @media (max-width: 520px) {

@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Scafold.css";
 
 function Scafold() {
-  const [isActive, setIsActive] = useState({});
+  const [isActive, setIsActive] = useState({about: true});
 
   const handleToggle = (e) => {
-    setIsActive(() => ({ [e.target.value]: !isActive[e.target.value] }));
+    if (e.target.value !== Object.keys(isActive)[0]) {
+      setIsActive(() => ({ [e.target.value]: !isActive[e.target.value] }));
+      console.log(isActive)
+    }
   };
 
   return (
@@ -18,7 +21,7 @@ function Scafold() {
             onClick={handleToggle}
             className={isActive["about"] ? "activeButton" : "containerButtons"}
           >
-            About
+            Show
           </button>
         </Link>
         <Link to="/gallery">
@@ -29,7 +32,7 @@ function Scafold() {
               isActive["gallery"] ? "activeButton" : "containerButtons"
             }
           >
-            Gallery
+            Galería
           </button>
         </Link>
         <Link to="/contact">
@@ -40,7 +43,7 @@ function Scafold() {
               isActive["contact"] ? "activeButton" : "containerButtons"
             }
           >
-            Contact
+            Contacto
           </button>
         </Link>
       </div>
