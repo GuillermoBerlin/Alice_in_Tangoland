@@ -2,18 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .container {
   display: flex;
   flex-direction: row;
   gap: 35px;
-  margin: 70px 0px;
+  margin: 25px 0px 50px 0px;
 }
 
 .containerButtons,
 .activeButton {
   font-size: 27px;
+  font-family: 'Alice', Courier;
   background-color: #00000000;
   color: #aaaaaa;
   font-weight: lighter;
@@ -65,10 +67,27 @@
   .container {
     gap: 25px;
   }
+  .containerButtons,
+.activeButton {
+  font-size: 20px;
+  
+}
 }
 
 @media (max-width: 450px) {
   .container {
-    margin: 20px 0px;
+    margin: 28px 0px;
+    gap: 20px;
   }
+}
+
+@media (max-width: 390px) {
+  .container {
+    gap: 15px;
+  }
+  .containerButtons,
+.activeButton {
+  font-size: 18px;
+  
+}
 }

@@ -45,11 +45,11 @@ export default function Contact() {
   return (
     <div className="contact-main-div">
       <div className="left-column">
-        <h3>Send A Message</h3>
+        <h3>Enviar mensaje</h3>
         <div className="form">
           <form ref={form} onSubmit={handleSubmit(sendEmail)}>
             <div className="field">
-              <label>Name</label>
+              <label>Nombre</label>
               <input name="name" type="text" required {...register("name")} />
             </div>
             <div className="field">
@@ -57,27 +57,27 @@ export default function Contact() {
               <input name="email" type="email" required {...register("email")} />
             </div>
             <div className="field">
-              <label>Telephone</label>
+              <label>Teléfono</label>
               <input name="telephone" type="tel" {...register("telephone")} />
             </div>
             <div className="field">
-              <label>Message</label>
+              <label>Mensaje</label>
               <textarea name="message" type="text" required {...register("message")} />
             </div>
             <button className="button-send" type="submit">
-              Send
+              Enviar
             </button>
           </form>
         </div>
       </div>
       <div className="right-column">
-        <h3>Contact</h3>
+        <h3>Contacto</h3>
         <div className="contact-element">
           <div className="icon-contact">
             <PhoneIcon />
           </div>
           <div className="contact-element-texts">
-            <h3>Telephone</h3>
+            <h3>Teléfono</h3>
             <div className="contact-element-text-icon">
               <h4>0341 4854457</h4>
               <CopyToClipboard text="0341 4854457">
