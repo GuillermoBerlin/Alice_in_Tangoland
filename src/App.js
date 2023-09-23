@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import "./App.css";
 import Header from "./components/Header";
 import Scafold from "./components/Scafold";
+import florish from "./images/florish.png";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
       </div>
       <div className="bottomContent">
+        <img src={florish} alt="florish" className="florish"/>
         <Scafold />
         <Routes>
           <Route path="/about" element={<About />} />

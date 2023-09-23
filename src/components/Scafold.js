@@ -21,7 +21,7 @@ function Scafold() {
             onClick={handleToggle}
             className={isActive["about"] ? "activeButton" : "containerButtons"}
           >
-            Show
+            SHOW
           </button>
         </Link>
         <Link to="/gallery">
@@ -32,7 +32,7 @@ function Scafold() {
               isActive["gallery"] ? "activeButton" : "containerButtons"
             }
           >
-            Galería
+            GALERÍA
           </button>
         </Link>
         <Link to="/contact">
@@ -43,7 +43,7 @@ function Scafold() {
               isActive["contact"] ? "activeButton" : "containerButtons"
             }
           >
-            Contacto
+            CONTACTO
           </button>
         </Link>
       </div>
