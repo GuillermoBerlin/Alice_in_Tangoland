@@ -56,13 +56,19 @@ export default function Gallery() {
         <div id="lightbox" onClick={hideLightBox}>
           <div id="imageContainer">
             <ChevronLeftIcon
-              sx={{ fontSize: "50px", float: "left" }}
+              sx={{
+                fontSize: { xs: 20, sm: 30, md: 40, lg: 50 },
+                float: "left",
+              }}
               className="chevronButton"
               onClick={showPrev}
             />
             <img id="lightbox-img" alt="" src={imageToShow}></img>
             <ChevronRightIcon
-              sx={{ fontSize: "50px", float: "right" }}
+              sx={{
+                fontSize: { xs: 20, sm: 30, md: 40, lg: 50 },
+                float: "right",
+              }}
               className="chevronButton"
               onClick={showNext}
             />
