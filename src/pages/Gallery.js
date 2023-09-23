@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./gallery.css";
 import images from "../components/Images";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 export default function Gallery() {
   const [imageToShow, setImageToShow] = useState("");
@@ -16,7 +18,12 @@ export default function Gallery() {
   };
 
   const imageCards = images.map((image) => (
-    <img className="image-card" onClick={() => showImage(image)} src={image} />
+    <img
+      className="image-card"
+      alt=""
+      onClick={() => showImage(image)}
+      src={image}
+    />
   ));
 
   const showNext = (e) => {
@@ -47,9 +54,25 @@ export default function Gallery() {
 
       {lightboxDisplay ? (
         <div id="lightbox" onClick={hideLightBox}>
-          <button onClick={showPrev}>⭠</button>
-          <img id="lightbox-img" src={imageToShow}></img>
-          <button onClick={showNext}>⭢</button>
+          <div id="imageContainer">
+            <ChevronLeftIcon
+              sx={{
+                fontSize: { xs: 20, sm: 30, md: 40, lg: 50 },
+                float: "left",
+              }}
+              className="chevronButton"
+              onClick={showPrev}
+            />
+            <img id="lightbox-img" alt="" src={imageToShow}></img>
+            <ChevronRightIcon
+              sx={{
+                fontSize: { xs: 20, sm: 30, md: 40, lg: 50 },
+                float: "right",
+              }}
+              className="chevronButton"
+              onClick={showNext}
+            />
+          </div>
         </div>
       ) : (
         ""

@@ -4,21 +4,41 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px;
+  grid-gap: 20px;
 }
 
 .image-card {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
   object-fit: cover;
   cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+}
+
+#imageContainer {
+  height: 80vh;
+  width: 50vw;
+  margin: 0 auto;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #lightbox-img {
-  height: 80vh;
-  max-width: 90vw;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #lightbox {
@@ -28,8 +48,50 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(50, 50, 50, 0.3);
+  backdrop-filter: blur(15px);
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.chevronButton {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.chevronButton:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 1050px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  #imageContainer {
+    height: 80vh;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  #imageContainer {
+    height: 50vh;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+  #imageContainer {
+    height: 40vh;
+    width: 90vw;
+  }
 }
