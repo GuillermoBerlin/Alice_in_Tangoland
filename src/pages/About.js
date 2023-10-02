@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 import aboutImage from "../images/bio_image.png";
+import mirrorImage from "../images/image_mirror.png";
 
 export default function About() {
   return (
@@ -17,6 +18,9 @@ export default function About() {
         </div>
       </div>
       <div className="synopsis-container">
+      <div className="image-synopsis">
+          <img src={mirrorImage} />
+        </div>
         <div className="synopsis-text-container">
           <h3>Sinopsis</h3>
           <p>
@@ -25,7 +29,9 @@ export default function About() {
           A lo largo del camino, se encuentra con todo tipo de personajes: las flores, los gemelos, la oruga, el gato, el "zapatero" loco, la reina de corazones, entre otros, personificando diversos aspectos de ella misma como el orgullo, la locura, la alegría, el miedo, la vanidad y la conciencia.
           "Alice in Tangoland" nos narra el viaje único y, al mismo tiempo, universal de un ser en busca de sí mismo, prisionero de un mundo ilusorio en el cual la aceptación y la entrega son claves para despertar.
           </p>
+          
         </div>  
+       
       </div>
     </div>
   );
