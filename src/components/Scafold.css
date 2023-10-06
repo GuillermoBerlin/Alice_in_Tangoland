@@ -1,18 +1,24 @@
-.buttonsAndContent {
+.main-container-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  width: 100%;
 }
 
-.container {
+.buttons-container {
   display: flex;
   flex-direction: row;
   gap: 35px;
   margin: 25px 0px 50px 0px;
 }
 
-.containerButtons,
+.florish-menu{
+  display: none;
+  width: 200px;
+  padding-right: 10px;
+}
+
+.Button,
 .activeButton {
   font-size: 27px;
   font-family: 'Alice', Courier;
@@ -27,7 +33,7 @@
   letter-spacing: 2px;
 }
 
-.containerButtons::after {
+.Button::after {
   content: "";
   position: absolute;
   width: 0;
@@ -38,7 +44,7 @@
   transition: width 0.25s ease-out;
 }
 
-.containerButtons:hover::after {
+.Button:hover::after {
   width: 100%;
 }
 
@@ -57,37 +63,79 @@
   color: #fffefe;
 }
 
+.icon-menu{
+  color: #fffefe;
+  display: none;
+  right: 12vw;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.icon-cancel-container { 
+  right: 7vw;
+  position: absolute; 
+}
+
+.icon-cancel{
+  size: 15px;
+  color: #fffefe;
+  display: none;
+}
+
 @media (max-width: 1050px) {
-  .container {
-    margin: 45px 0px;
+  .buttons-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: fixed;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      margin-top: 0px;
+      height: 330px;
+      justify-content: space-evenly;
+      align-items: center;
+      top: 180px;
+      gap: 0px;   
   }
-}
 
-@media (max-width: 540px) {
-  .container {
-    gap: 25px;
+  .buttons-container.active {
+    background: #000000;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    margin-top: 0px;
+    height: 330px;
+    padding: 0px;
   }
-  .containerButtons,
+
+.Button,
 .activeButton {
+  background-color: #00000000;
+  color: #fffefe; 
+  letter-spacing: 13px;
   font-size: 20px;
-  
-}
 }
 
-@media (max-width: 450px) {
-  .container {
-    margin: 28px 0px;
-    gap: 20px;
-  }
+.activeButton::after {
+  width: 92%;
 }
 
-@media (max-width: 390px) {
-  .container {
-    gap: 15px;
-  }
-  .containerButtons,
-.activeButton {
-  font-size: 18px;
+.icon-cancel{
+  display: block;
+}
+
+.icon-menu {
+  display:block ;
+}
+
+.florish-menu{
+  display: block
+}
+
+}
+
   
-}
-}
+
+

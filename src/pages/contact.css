@@ -124,6 +124,13 @@ textarea{
 
 }
 
+@media (max-width: 1050px) {
+
+    .contact-main-div {
+      margin-top: 90px;
+    }
+}    
+
 @media (max-width: 750px) {
     .contact-main-div{   
         flex-direction: column; 
