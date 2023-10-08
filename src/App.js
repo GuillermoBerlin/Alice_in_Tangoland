@@ -1,5 +1,6 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import About from "./pages/About";
+import Staff from "./pages/Staff";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import "./App.css";
@@ -14,10 +15,11 @@ function App() {
         <Header />
       </div>
       <div className="bottomContent">
-        <img src={florish} alt="florish" className="florish"/>
+        <img src={florish} alt="florish" className="florish" />
         <Scafold />
         <Routes>
           <Route path="/about" element={<About />} />
+          <Route exact path="/staff" element={<Staff />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<About />} />

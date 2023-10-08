@@ -1,0 +1,39 @@
+.bio-container {
+  text-align: center;
+  margin: 0px;
+  color: #aaaaaa;
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.main-container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 60vw;
+  box-sizing: border-box;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+@media (max-width: 1050px) {
+  .main-container {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-container {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-container {
+    width: 90vw;
+  }
+}
