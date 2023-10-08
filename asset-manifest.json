@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Alice_in_Tangoland/static/css/main.8659bdee.css",
-    "main.js": "/Alice_in_Tangoland/static/js/main.ed7d604b.js",
+    "main.css": "/Alice_in_Tangoland/static/css/main.8435f801.css",
+    "main.js": "/Alice_in_Tangoland/static/js/main.36f13e3c.js",
     "static/js/787.94b915f3.chunk.js": "/Alice_in_Tangoland/static/js/787.94b915f3.chunk.js",
     "static/media/Frame 28.png": "/Alice_in_Tangoland/static/media/Frame 28.738b5ccc3b6bb882b77b.png",
     "static/media/Flyer.jpeg": "/Alice_in_Tangoland/static/media/Flyer.e827fc27ab1dd44474e6.jpeg",
@@ -17,12 +17,12 @@
     "static/media/image_mirror.png": "/Alice_in_Tangoland/static/media/image_mirror.ebd8614f6049ee346f9d.png",
     "static/media/florish.png": "/Alice_in_Tangoland/static/media/florish.e4406e69c84cf4bf3ebd.png",
     "index.html": "/Alice_in_Tangoland/index.html",
-    "main.8659bdee.css.map": "/Alice_in_Tangoland/static/css/main.8659bdee.css.map",
-    "main.ed7d604b.js.map": "/Alice_in_Tangoland/static/js/main.ed7d604b.js.map",
+    "main.8435f801.css.map": "/Alice_in_Tangoland/static/css/main.8435f801.css.map",
+    "main.36f13e3c.js.map": "/Alice_in_Tangoland/static/js/main.36f13e3c.js.map",
     "787.94b915f3.chunk.js.map": "/Alice_in_Tangoland/static/js/787.94b915f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8659bdee.css",
-    "static/js/main.ed7d604b.js"
+    "static/css/main.8435f801.css",
+    "static/js/main.36f13e3c.js"
   ]
 }
